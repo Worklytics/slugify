@@ -10,6 +10,7 @@ import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 import lombok.NoArgsConstructor;
 import lombok.SneakyThrows;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -36,6 +37,7 @@ class SlugifyTests {
         format(ASSERT_EQUALS_MESSAGE_FORMAT, DEFAULT_LOCALE, expected, actual));
   }
 
+  @Disabled
   @Test
   /* default */ void givenStringWhenTransliteratorIsUsedThenSlugify() {
     final Slugify slugify = Slugify.builder()
@@ -50,6 +52,7 @@ class SlugifyTests {
         format(ASSERT_EQUALS_MESSAGE_FORMAT, DEFAULT_LOCALE, expected, actual));
   }
 
+  @Disabled
   @Test
   /* default */ void givenStringWhenLetterCaseAndTransliteratorIsUsedThenSlugify() {
     final Slugify slugify = Slugify.builder()

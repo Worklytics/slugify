@@ -1,6 +1,5 @@
 package com.github.slugify;
 
-import com.ibm.icu.text.Transliterator;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.Normalizer;
@@ -132,7 +131,8 @@ public class Slugify {
   }
 
   private String transliterate(final String input) {
-    return Transliterator.getInstance(ASCII).transliterate(input);
+    // Worklytics version doesn't use this, and is a 20Mb dependency. Do normalize in any case.
+    return normalize(input);
   }
 
   private String normalize(final String input) {

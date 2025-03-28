@@ -2,6 +2,9 @@
 [![GitHub license](https://img.shields.io/github/license/slugify/slugify.svg)](https://github.com/slugify/slugify/blob/master/LICENSE)
 [![javadoc](https://javadoc.io/badge2/com.github.slugify/slugify/javadoc.svg)](https://javadoc.io/doc/com.github.slugify/slugify)
 
+## MODIFICATION
+- Eliminate icu library (20Mb) to use use core features, not intended to be used with non ascii characters.
+
 ## Description
 Small utility library for generating speaking URLs.
 
